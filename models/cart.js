@@ -9,12 +9,13 @@ const p = path.join(
 
 module.exports = class Cart {
     static addProduct(id, productPrice) {
+        // Fetch the previous cart
         fs.readFile(p, (err, fileContent)=>{
-            let cart = {products : [], totalPrice : 0};
+            let cart = { products : [], totalPrice : 0 };
             if(!err){
                 cart = JSON.parse(fileContent);
             }
-
+            // Analyze the cart => Find existing product
             const existingProductIndex = cart.products.findIndex(prod => prod.id === id);
             const existingProduct = cart.products[existingProductIndex];
             let updatedProduct;
@@ -35,6 +36,6 @@ module.exports = class Cart {
             fs.writeFile(p, JSON.stringify(cart), (err)=>{
                 console.log(err);
             });
-        })
-    }
+        });
+    };
 }
