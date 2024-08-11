@@ -1,16 +1,1 @@
-[
-    {
-        "title":"A Book",
-        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHYt3SS-NJD1qJdb7fywQvGxtD7hs8P8pY-Q&s",
-        "description":"This is an awesome book!",
-        "price":"19",  
-        "id":"127632"      
-    },
-    {
-        "title":"A pen",
-        "imageUrl":"https://assets.ajio.com/medias/sys_master/root/20240807/8Szc/66b378076f60443f31f3a482/-473Wx593H-462760846-black-MODEL.jpg",
-        "description":"It is a ball pen, with metal cover",
-        "price":"2",
-        "id":"0.3548502844012398"
-    }
-]
+[{"title":"A Book","imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHYt3SS-NJD1qJdb7fywQvGxtD7hs8P8pY-Q&s","description":"This is an awesome book!","price":"19","id":"127632"},{"title":"A pen","imageUrl":"https://assets.ajio.com/medias/sys_master/root/20240807/8Szc/66b378076f60443f31f3a482/-473Wx593H-462760846-black-MODEL.jpg","description":"It is a ball pen, with metal cover","price":"2","id":"0.3548502844012398"},{"title":"Wine bottle","imageUrl":"https://buywinesonline.com/cdn/shop/files/1000StoriesBourbonBarrelAgedCabernetSauvignon_1.jpg?v=1698706018","description":"It's a very old and rare wine\r\n","price":"25","id":"0.43428981792404975"}]
