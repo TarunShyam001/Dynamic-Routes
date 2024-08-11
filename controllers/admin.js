@@ -43,7 +43,13 @@ exports.postEditProduct = (req, res, next) => {
   const updatedImgUrl = req.body.imageUrl;
   const updatedPrice = req.body.price;
   const updatedDesc = req.body.description;
-  const updatedProduct = new Product(prodId, updatedTitle, updatedImgUrl, updatedDesc, updatedPrice);
+  const updatedProduct = new Product(
+    prodId,
+    updatedTitle, 
+    updatedImgUrl, 
+    updatedDesc, 
+    updatedPrice
+  );
   updatedProduct.save();
   res.redirect('/admin/products');
 };
@@ -56,4 +62,10 @@ exports.getProducts = (req, res, next) => {
       path: '/admin/products'
     });
   });
+};
+
+exports.postDeleteProduct = (req, res, next) => {
+  const prodId = req.body.productId;
+  Product.deleteById(prodId);
+  res.redirect('/admin/products');
 };
